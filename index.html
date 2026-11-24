@@ -19,8 +19,7 @@ function updateScrollUI(){const max=document.documentElement.scrollHeight-window
 function updateA(){let a=+document.getElementById('a1').value,d=+document.getElementById('d').value;document.getElementById('a1v').textContent=a;document.getElementById('dv').textContent=d;document.getElementById('aseq').textContent=Array.from({length:6},(_,i)=>a+i*d).join(', ')+', …'}document.getElementById('a1').addEventListener('input',updateA);document.getElementById('d').addEventListener('input',updateA);
 function updateG(){let q=+document.getElementById('q').value;document.getElementById('qv').textContent=q;document.getElementById('gseq').textContent=Array.from({length:6},(_,i)=>2*Math.pow(3,i)).join(', ')+', …';document.getElementById('gseq2').textContent=Array.from({length:6},(_,i)=>Math.pow(q,i)).join(', ')+', …'}document.getElementById('q').addEventListener('input',updateG);
 function answer(el,correct){let f=document.getElementById('feedback');f.textContent=correct?'Дұрыс! Айырмасы: 8 − 5 = 3.':'Қайта ойланып көр! Көршілес мүшелердің айырмасын тап.';f.style.color=correct?'#21834a':'#b14a3a'}function answer2(el,correct){let f=document.getElementById('feedback2');f.textContent=correct?'Дұрыс! Әр сан 2-ге көбейеді.':'Қайта байқап көр: 6 ÷ 3 неге тең?';f.style.color=correct?'#21834a':'#b14a3a'}
-</script></body></html>
-<style>
+</script></body><style>
 /* ===== PURE WHITE LIGHT THEME ===== */
 
 html[data-theme="light"],
@@ -92,4 +91,4 @@ html[data-theme="light"] .btn {
 html[data-theme="dark"] body {
     background-image: revert !important;
 }
-</style>
+</style></html>
