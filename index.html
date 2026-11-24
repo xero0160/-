@@ -20,3 +20,76 @@ function updateA(){let a=+document.getElementById('a1').value,d=+document.getEle
 function updateG(){let q=+document.getElementById('q').value;document.getElementById('qv').textContent=q;document.getElementById('gseq').textContent=Array.from({length:6},(_,i)=>2*Math.pow(3,i)).join(', ')+', …';document.getElementById('gseq2').textContent=Array.from({length:6},(_,i)=>Math.pow(q,i)).join(', ')+', …'}document.getElementById('q').addEventListener('input',updateG);
 function answer(el,correct){let f=document.getElementById('feedback');f.textContent=correct?'Дұрыс! Айырмасы: 8 − 5 = 3.':'Қайта ойланып көр! Көршілес мүшелердің айырмасын тап.';f.style.color=correct?'#21834a':'#b14a3a'}function answer2(el,correct){let f=document.getElementById('feedback2');f.textContent=correct?'Дұрыс! Әр сан 2-ге көбейеді.':'Қайта байқап көр: 6 ÷ 3 неге тең?';f.style.color=correct?'#21834a':'#b14a3a'}
 </script></body></html>
+<style>
+/* ===== PURE WHITE LIGHT THEME ===== */
+
+html[data-theme="light"],
+html:not([data-theme="dark"]) {
+    --paper: #ffffff !important;
+    --card: #ffffff !important;
+    --soft: #ffffff !important;
+    --life: #ffffff !important;
+    --bg: #ffffff !important;
+}
+
+/* Основной фон */
+html[data-theme="light"] body,
+html:not([data-theme="dark"]) body,
+body {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+/* Все основные секции */
+html[data-theme="light"] main,
+html[data-theme="light"] section,
+html[data-theme="light"] article,
+html[data-theme="light"] .container,
+html[data-theme="light"] .card,
+html[data-theme="light"] .panel,
+html[data-theme="light"] .content,
+html[data-theme="light"] .hero,
+html[data-theme="light"] .life,
+html[data-theme="light"] .example,
+html[data-theme="light"] .box {
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* Убираем желтые и кремовые градиенты */
+html[data-theme="light"] * {
+    background-image: none !important;
+}
+
+/* Карточки */
+html[data-theme="light"] .card,
+html[data-theme="light"] .example-card,
+html[data-theme="light"] .life-card {
+    background: #ffffff !important;
+    border: 1px solid #dce4eb !important;
+}
+
+/* Псевдоэлементы */
+html[data-theme="light"] *::before,
+html[data-theme="light"] *::after {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Светлая тема — без желтизны */
+html[data-theme="light"] {
+    background: #ffffff !important;
+    color: #172c45;
+}
+
+/* Синие акценты оставляем */
+html[data-theme="light"] button,
+html[data-theme="light"] .btn {
+    color: inherit;
+}
+
+/* Тёмную тему не изменяем */
+html[data-theme="dark"] body {
+    background-image: revert !important;
+}
+</style>
